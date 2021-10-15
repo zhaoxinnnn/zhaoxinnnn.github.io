@@ -427,9 +427,38 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="UmiJS初探"><a href="#UmiJS初探" class="headerlink" title="UmiJS初探"></a>UmiJS初探</h3><p>它是什么？</p>
-<p>​    一个自带路由配置、webpack优化、简易部署、各种插件的企业级的React开发框架，方便前端快速上手业务，降低前端处理框架和配置的门槛，通过了解<a target="_blank" rel="noopener" href="https://v2.umijs.org/zh/">官网</a>指南就可以开发出一个有条理且性能不错的前端项目。</p>
-<p>贴一张来源于官网的架构图：</p>
+                <h3 id="UmiJS初探"><a href="#UmiJS初探" class="headerlink" title="UmiJS初探"></a>UmiJS初探</h3><!--本文只是我刚学习UmiJS的一些体会和总结，错误的地方希望各位指正-->
+
+<p>它是什么？</p>
+<p>​    一个自带路由配置、webpack优化、简易部署、各种插件的企业级的React开发框架，方便前端快速上手业务，降低前端处理框架和配置的门槛，通过了解<a target="_blank" rel="noopener" href="https://v2.umijs.org/zh/">官网</a>指南就可以开发出一个有条理且高性能的前端项目。</p>
+<p>贴一张来源于官网的架构图以及上线流程图：</p>
+<img src="https://gw.alipayobjects.com/zos/rmsportal/zvfEXesXdgTzWYZCuHLe.png" style="zoom:50%;">
+
+<!--
+
+ // 应用类型，有三个可添项：
+ // console 控制台（中台）应用，从 bigfish 1.0 迁移过来的应用请填写该项
+ // h5，移动端 h5 应用
+ // site，静态站点类应用
+
+ // 部署模式，有下面多个可添项：
+ // bigfishweb，通过 site 对内站点应用（bigfishweb）部署
+ // assets，适配 Basement 中的 标准前端应用（assets 应用）类型
+ // sofa，适配 Bigfish 的 SOFA 集成部署模式
+ // chair，适配 Bigfish 的 Chair 集成部署模式
+ // offline，离线 h5 应用的部署模式
+ // online，在线 h5 应用的部署模式
+ // custom，自定义部署模式，该模式下只会把产物构建到 dist 目录，后续操作可以自定义
+
+-->
+
+<img src="https://gw.alipayobjects.com/zos/rmsportal/NKsqmTAttwTzYVMJMcnB.png" style="zoom:50%;">
+
+<h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><p>​    引自官网：umi 首先会加载用户的配置和插件，然后基于配置或者目录，生成一份路由配置，再基于此路由配置，把 JS/CSS 源码和 HTML 完整地串联起来。用户配置的参数和插件会影响流程里的每个环节。</p>
+<ol>
+<li>加载用户的配置和插件</li>
+<li>生成路由配置，基于路由配置将JS/CSS源码和HTML完整串联起来</li>
+</ol>
 
                 
             </div>
